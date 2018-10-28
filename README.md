@@ -5,12 +5,12 @@ This repo contains the terraform configs to launch infrastrucutre in AWS Cloud. 
 
 1. Please install followings as prerequisite;
 
-``
+```
 - git version 2.14.1
 - Terraform v0.11.10
 - aws-cli/1.11.187 Python/2.7.10 Darwin/17.7.0 botocore/1.10.10 (Configure your aws profile with us-east-1 region, profile name: devops-test ). You can read more details in provider section below. 
 
-``
+```
 
 
 2. Please clone the git repo using;
@@ -21,6 +21,7 @@ This repo contains the terraform configs to launch infrastrucutre in AWS Cloud. 
 - terraform init (This will download dependencies for terraform)
 -  terraform plan (This is going to show you all the resoruces its doing to create), any case of any error you will be able to see it here. 
 - terraform apply (if all looks good, you can run terraform apply and type yes to apply the changes)
+- terraform output (To see domain name of alb, ec2 machines IP addresses at any time)
 ```
 
 
