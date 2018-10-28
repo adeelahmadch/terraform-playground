@@ -6,7 +6,7 @@ This repo contains the terraform configs to launch infrastrucutre in AWS Cloud. 
 
 # Diagram
 
-![Infrastructure Diagram](https://drive.google.com/file/d/1R13IkYhBfBEBzlRsDWklzlPe9Rw5Lg1i/view)
+Link: https://drive.google.com/file/d/1R13IkYhBfBEBzlRsDWklzlPe9Rw5Lg1i/view
 
 
 # Directory Structure
