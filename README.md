@@ -15,13 +15,13 @@ This repo contains the terraform configs to launch infrastrucutre in AWS Cloud. 
 
 2. Please clone the git repo using;
 
-``
+```
 - git clone https://github.com/adeelahmadch/terraform-playground.git
 - cd terraform-playground/infrastructure/dev
 - terraform init (This will download dependencies for terraform)
 -  terraform plan (This is going to show you all the resoruces its doing to create), any case of any error you will be able to see it here. 
 - terraform apply (if all looks good, you can run terraform apply and type yes to apply the changes)
-``
+```
 
 
 
@@ -32,7 +32,7 @@ Link: https://drive.google.com/file/d/1R13IkYhBfBEBzlRsDWklzlPe9Rw5Lg1i/view
 
 # Directory Structure
 
-``
+```
 .
 ├── README.md
 └── infrastructure
@@ -52,12 +52,12 @@ Link: https://drive.google.com/file/d/1R13IkYhBfBEBzlRsDWklzlPe9Rw5Lg1i/view
         ├── terraform.tfstate
         ├── terraform.tfstate.backup
         └── variables.tf
-``
+```
 
 # Variables
 Many important values are controlled via variable, i tried to externalize and make config dynamic, however with next commits i will try to imporve that. for now i following values that are coming from varibles. 
 
-``
+```
 1. region
 2. profile
 3. vpc and subnet network range
@@ -65,7 +65,7 @@ Many important values are controlled via variable, i tried to externalize and ma
 5. amazon linux ami image
 6. ec2 instance type
 
-``
+```
 
 
 # SSH-KeyPair:
@@ -80,31 +80,31 @@ Terraform support different provider, I am using Amazon for my infrastructure. T
 
 cat /home/myuser/.aws/credentials
 
-``
+```
 [devops-test]
 aws_access_key_id = AKIXXXXXXXXXXXXXXXX
 aws_secret_access_key = VXXXXXXXXXXXXXXXXXXXX/PS4
 
-``
+```
 
 cat /home/myuser/.aws/config
 
-``
+```
 [default]
 region = us-east-1
 
-``
+```
 
 # Networking Setup with VPC
 
 Terraform file `dev-vpc.tf` contains definations for networking setup. 
 
-``
+```
 VPC: 172.16.0.0/16 (us-east-1)
 Public Subnet 1: 172.16.248.0/22 (us-east-1a)
 Public Subnet 2: 172.16.252.0/22 (us-east-1b)
 
-``
+```
 
 Note: I used this cool site to calculate my subnet for my range; http://www.davidc.net/sites/default/subnets/subnets.html
 
