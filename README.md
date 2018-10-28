@@ -22,6 +22,9 @@ This repo contains the terraform configs to launch infrastrucutre in AWS Cloud. 
 -  terraform plan (This is going to show you all the resoruces its doing to create), any case of any error you will be able to see it here. 
 - terraform apply (if all looks good, you can run terraform apply and type yes to apply the changes)
 - terraform output (To see domain name of alb, ec2 machines IP addresses at any time)
+
+Once you are done with your working, you can destroy everything using;
+- terraform destroy
 ```
 
 
