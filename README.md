@@ -6,7 +6,7 @@ This repo contains the terraform configs to launch infrastrucutre in AWS Cloud. 
 
 # Diagram
 
-<img src="https://www.dropbox.com/s/vphxu15q9ajn2yc/devops-playground.jpg?dl=0" width="20%"/>
+<img src="https://www.dropbox.com/s/vphxu15q9ajn2yc/devops-playground.jpg?dl=0"/>
 
 
 # Directory Structure
